@@ -33,13 +33,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <!--打包的时候可以不用包进去，别的设施(Web Container)会提供,相当compile(默认)，但是打包阶段做了exclude-->
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
 
         <!--阿里 Druid Spring Boot Starter依赖-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -50,6 +56,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.shuriken.customer_personnel</groupId>
+            <artifactId>web</artifactId>
         </dependency>
 
     </dependencies>
